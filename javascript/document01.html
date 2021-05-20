@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        px:pixel
+        화면의 해상도에 따라서 크기등이 결정되는 단위
+        FHD(1080p) : 1920px * 1080px
+        WHD(QHD) : 2160px * 1920px
+        UHD 4K : 3840px * 2160px
+        */
+    p{
+        height: 20px;
+        margin: 10px;
+        border: 1px solid green;
+
+    }
+
+    </style>
+</head>
+<body>
+    <p id="p1">p1</p>
+    <p id="p2">p2</p>
+    <p id="p3">p3</p>
+
+</body>
+<script>
+    /* js(java scipt)를 사용한 event핸들링
+    */
+   // selector
+   // tags, id, classes
+
+   // id로 선택하기 idselector
+   // 결과가 1개만 있다
+   document.querySelector("p#p1");
+   document.getElementById("p1");
+
+   // tags로 선택하기
+   // 결과가 여러개있다
+   // 배열결과가 생성된다
+   document.querySelector("p");
+   document.getElementsByTagName("p")
+
+   // classes로 선택하기
+   // 결과가 여러개 있다
+   // 배열과과가 생성된다
+   document.querySelector(".pclass");
+   document.getElementsByClassName("pclass")
+    // 지정된 selector에 event 추가하기
+    document.querySelector("#p1")
+    addEventListener("click",function(ev){
+        alert("반갑슴미다");
+    })
+    // p tag들을 selector
+    // 선택된 결과를 ptags라는 변수에 담기
+    // p tag요소들 전부를 ptags라는 변수에 담기
+    // 이때 ptags는 배열요소이다
+    let ptags=document.querySelectorAll("p");
+    // tags와 classes는 같은 이름의 요소가 다수있을수 있기때문에 event 핸들러를 등록하기 위해서는
+    // 배열을 사용하여 등록해야 한다
+    // 생성된 ptags 배열을 반복순회하면서 각각요소에 click event설정하기
+    for(let i =0;i<ptags.length;i++){
+        ptags[i].addEventListener("click",function(ev){
+            let text=ev.currentTarget.textContent
+            alert(text)
+        }
+        )
+    }
+    /*
+        현재문서(document)의 다수의 p tag에 같은 event 핸들러를 등록했지만
+        실제 작동될때는 클릭한 p tag에서만 이벤트가 발생한다
+        event가 발생한 p tag의 text를 alert한다
+    */
+    
+
+
+
+</script>
+</html>
