@@ -1,7 +1,7 @@
 # HTML 코드 실습
 
 # 2021-05-13
-*HTML 코드 실습을 시작 합니다
+*HTML 코드 실습을 시작 합니다  
 *p tag, table tag 간단한 style설정
 
 ## 덤으로 vi editor도 실습
