@@ -1,0 +1,91 @@
+@charset "UTF-8";
+body {
+  /* 롯데마트 드림체 */
+
+  font-family: "LotteMartDream";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2")
+      format("woff2"),
+    url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff")
+      format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  display: block;
+
+  padding-left: 2px;
+
+  padding-right: 2px;
+
+  border: none;
+}
+fieldset {
+  border: 0;
+}
+h1 {
+  font-size: 40px;
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+}
+#sign {
+  width: 50%;
+  margin: 0 auto;
+}
+#sign.title {
+  padding: 50px 0 20px;
+}
+.signtable th,
+.signtable td {
+  padding: 15px;
+  box-sizing: border-box;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+}
+
+.signtable th {
+  text-align: center;
+  background-color: #c3e5e9;
+  width: 200px;
+}
+.signtable td {
+  width: 250px;
+}
+
+.signtable .textForm {
+  width: 300px;
+  height: 30;
+  border: 1px solid #c3e5e9;
+  border-radius: 5px;
+  padding: 0 30px;
+  height: 25px;
+  box-sizing: border-box;
+}
+.signtable .btn_real {
+  width: 60px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: #c3e5e9;
+}
+.btn_signbtn {
+  text-align: center;
+  margin: 0;
+}
+.btn_signbtn button {
+  width: 180px;
+  height: 60px;
+  margin: 20px 50px;
+  border: 0;
+}
+.btn_signbtn .btn_sign {
+  background-color: #c3e5e9;
+}
