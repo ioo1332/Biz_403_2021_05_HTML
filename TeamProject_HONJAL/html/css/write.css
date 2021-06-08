@@ -1,0 +1,40 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+.board {
+  background-color: white;
+  border: 1px solid black;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 0.5em 3.5em 0.5em 1em;
+}
+
+fieldset {
+  border: 0;
+  padding: 5px 65px;
+}
+table {
+  border-collapse: collapse;
+}
+#write {
+  width: 50%;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 30px;
+  padding: 25px 65px;
+}
+.title {
+  background-color: white;
+  border: 1px solid black;
+  display: inline-block;
+  margin: 10px;
+}
+textarea {
+  background-color: white;
+  border: 1px solid black;
+  margin: 10px 10px;
+}

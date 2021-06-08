@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>write</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/write.css" />
   </head>
   <body>
     <header>
@@ -26,11 +27,26 @@
         </ul>
       </nav>
       <div id="write">
-        <h1>글쓰기</h1>
-        <form action="*.html" method="POST"></form>
-      </div>
-    </header>
+        <fieldset>
+          <h1>글쓰기</h1>
+          <form action="*.html" method="POST">
+          <table class="inputtbl">
+            <select class="board">
+              <option id="honzal">혼잘TALK</option>
+              <option id="info">정보TALK</option>
+            </select>
 
-    <div class=""></div>
+            <input class="title" type="text" placeholder="제목을 입력해주세요" /><br />
+            <textarea class="contents" placeholder="내용을 입력해주세요."></textarea
+            ><br />
+            <div class="btn_choose">
+              <button class="btn_write">글쓰기</button>
+              <button class="btn_cancel">취소</button>
+            </div>
+          </table>
+        </fieldset>
+      </div>
+    </form>
+    </header>
   </body>
 </html>
