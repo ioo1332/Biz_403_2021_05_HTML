@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic HTML</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: 10px auto;
+      }
+      table td {
+        border: 1px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>이름</td>
+        <td>전화번호</td>
+        <td>주소</td>
+      </tr>
+      <tr>
+        <td>홍길동</td>
+        <td>010-111-1111</td>
+        <td>서울특별시</td>
+      </tr>
+    </table>
+  </body>
+  <script>
+    /* 위에보이는 table을 js코드를 사용해 만드시오*/
+    const doc = document;
+    let body = doc.querySelector("body");
+    let div = doc.createElement("div");
+    let table = doc.createElement("table");
+    let tr = doc.createElement("tr");
+    let td = doc.createElement("td");
+    let cell = doc.createElement("cell");
+    body.appendChild(div);
+
+    let cell1 = doc.createElement("td");
+    cell1.innerHTML = "이름";
+    row.appendChild(cell1);
+
+    let cell2 = doc.createElement("td");
+    cell2.innerHTML = "전화번호";
+    row.appendChild(cell2);
+
+    let cell3 = doc.createElement("td");
+    cell3.innerHTML = "주소";
+    row.appendChild(cell3);
+
+    /*완성*/
+    let table = doc.createElement("tabel");
+    let tr1 = doc.createElement("tr");
+    let td1 = doc.createElement("td");
+    td1.innerHTML = "이름";
+
+    let td2 = doc.createElement("td");
+    td1.innerHTML = "전화번호";
+
+    let td3 = doc.createElement("td");
+    td1.innerHTML = "주소";
+
+    tr1.appendChild(td1);
+    tr1.appendChild(td2);
+    tr1.appendChild(td3);
+
+    table.appendChild(tr1);
+
+    let tr2 = document.createElement("tr");
+    tr2.appendChild(doc.createElement("td"));
+    tr2.appendChild(doc.createElement("td"));
+    tr2.appendChild(doc.createElement("td"));
+
+    table.appendChild(tr2);
+
+    doc.querySelector("body").appendChild(table);
+
+    //js 배열 사용
+    const titles = ["이름", "전화번호", "주소"];
+    const data = ["홍길동", "010", "서울시"];
+
+    let table1 = doc.createElement("table");
+    for (let i = 0; i < titles.length; i++) {
+      let td = doc.createElement("td");
+      td.innerHTML = title[i];
+      tr.appendChild(td);
+    }
+    table1.appendChild(tr1);
+    doc.querySelector("body".appendChild(table1));
+  </script>
+</html>
