@@ -56,12 +56,6 @@ header {
   width: 400px;
 }
 
-.navi {
-  width: 100%;
-  max-width: 1050px;
-  margin: auto;
-}
-
 .menu {
   display: flex;
   width: 80%;

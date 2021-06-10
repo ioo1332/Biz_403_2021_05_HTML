@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HONJAL</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/sign2.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="navi">
+        <div id="title">
+          <div id="logo"><img src="images/roof_beige.png" alt="지붕" /></div>
+          <a href="#"><h1>HONJAL</h1> </a>
+          <h2>혼자서도 잘해요</h2>
+        </div>
+        <ul id="menu">
+          <li class="menu_list"><a href="/notice">공지사항</a></li>
+          <li class="menu_list"><a href="/data">정보게시판</a></li>
+          <li class="menu_list"><a href="/tip">생활 TIP</a></li>
+          <li class="menu_list"><a href="/myhome">랜선집들이</a></li>
+          <li class="menu_list"><a href="/talk">혼잘TALK</a></li>
+          <li class="menu_list"><a href="/review">리뷰게시판</a></li>
+          <li class="menu_list"><a href="/qna">자취 Q&A</a></li>
+        </ul>
+      </nav>
+    </header>
+    <form>    
+      <h2>회원 가입</h2>
+        <fieldset>                  
+            <div>
+              <label>아이디</label>              
+                <input
+                  type="text"                 
+                  id="user_id"
+                  placeholder="6자 이상 영문과 숫자 조합"
+                />
+                <td><button class="btn_check">중복확인</button></td>
+            </div>           
+            <div>
+           <label >비밀번호</label>
+                <input
+                  type="password"                  
+                  id="user_password1"
+                  placeholder="8자 이상 영문과 숫자 조합"
+                />             
+          </div>
+          <div>
+           <label >비밀번호 재입력</label>
+                <input
+                  type="password"                 
+                  id="user_password2"
+                  placeholder="재입력 해주세요"
+                />
+              </div>
+            <div>
+           <label>이름</label>
+                <input type="text"  id="user_name" />
+              </div>
+            <div>
+           <label>닉네임</label>
+                <input type="nickname"  id="user_nickname" />
+              </div>
+            <div>
+                <label>e-mail</label>
+              <input type="email"  id="user_email" /></div>        
+        <div class="btn_signbtn">
+          <button type="submit" class="btn_sign">회원가입</button>
+          <button type="reset">취소</button>
+        </fieldset>        
+      </form>
+    <footer>
+      <address>CopyRight &copy; honjal@honjal.com</address>
+    </footer>
+
+    <div class=""></div>
+  </body>
+</html>

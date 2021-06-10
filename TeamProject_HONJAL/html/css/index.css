@@ -1,0 +1,230 @@
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix")
+      format("embedded-opentype"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff")
+      format("woff"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf")
+      format("truetype");
+}
+
+* {
+  font-family: "NanumBarunGothic";
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  list-style: none;
+}
+
+#main_top {
+  display: flex;
+  width: 100%;
+  max-width: 1050px;
+  margin: auto;
+  margin-top: 50px;
+  /* 가운데 정렬 해줘야 해서 margin:auto 쓰고 헤더높이만큼 아래로 와야 되기 때문에 margin-top을 그 아래에 써줌 */
+}
+
+/* user ------------------------------------------------------------ */
+
+/* height 쓰지 않고 padding */
+#main_user {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid gray;
+  max-width: 300px;
+  padding: 40px;
+}
+
+#main_user input {
+  font-size: 13px;
+  line-height: 2.5;
+  margin-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 35px;
+}
+
+#main_user button {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+/* slide ------------------------------------------------------------ */
+
+#main_slide {
+  width: 730px;
+  margin-left: 20px;
+  margin-right: 0px;
+  position: relative;
+}
+
+#main_slide img {
+  width: 100%;
+  display: none;
+  cursor: pointer;
+}
+
+#main_slide img:first-child {
+  display: block;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.left {
+  left: 20px;
+}
+
+.right {
+  right: 7px;
+}
+
+#circleBox {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 0 5px;
+}
+
+.circle:first-child {
+  background-color: #99c4c8;
+}
+
+/* best ------------------------------------------------------------ */
+
+#main_middle {
+  padding-top: 40px;
+  display: flex;
+  width: 100%;
+  max-width: 1050px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+#main_best,
+#main_data {
+  width: 50%;
+}
+
+#main_best {
+  padding-right: 20px;
+}
+#main_data {
+  padding-left: 20px;
+}
+
+#main_best h2,
+#main_best h2 span,
+#main_data h2 {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 7px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+
+#main_best h2 span {
+  border-bottom: 0;
+}
+
+#main_best h2,
+#main_data h2 {
+  padding-left: 15px;
+}
+
+#main_best img,
+#main_data img {
+  float: left;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+ol {
+  margin: 10px;
+}
+
+.list_best {
+  line-height: 2.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+/* bottom ------------------------------------------------------------ */
+
+#main_bottom {
+  width: 100%;
+  max-width: 1050px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#main_bottom h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.board {
+  table-layout: fixed;
+  width: 100%;
+  width: 1050px;
+  margin: auto;
+  text-align: center;
+}
+
+.board tr th {
+  border-top: 2px solid gray;
+  padding: 10px;
+  font-weight: bold;
+  background-color: #f5f3f3;
+  border-bottom: 1px solid lightgray;
+}
+
+.board tr td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 12px;
+  border-bottom: 0.5px solid #eae9e9;
+}
+
+.board tr td.title {
+  text-align: left;
+  cursor: pointer;
+}
+
+/* copyright ------------------------------------------------------------ */
+
+footer {
+  width: 100%;
+  max-width: 1050px;
+  margin: auto;
+  margin-top: 40px;
+  text-align: center;
+  border-top: 3px solid gray;
+  line-height: 5;
+}
