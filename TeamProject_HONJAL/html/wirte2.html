@@ -30,30 +30,29 @@
       </nav>
     </header>
     <form>
-      <h2>글쓰기</h2>
+      <div>
+        <h2>글쓰기</h2>
+      </div>
       <fieldset>
         <div>
-          
-          <select>
+          <select class="selectbox">
             <option id="honzal">혼잘TALK</option>
             <option id="info">정보TALK</option>
           </select>
           <input type="text" placeholder="제목을 입력해주세요" /><br />
         </div>
         <div>
-          <textarea 
+          <textarea
             class="contents"
             placeholder="내용을 입력해주세요."
           ></textarea
           ><br />
         </div>
       </fieldset>
-          <div>
-            <button>글쓰기</button>
-            <button>취소</button>
-          </div>
-        </div>
-      
+      <div class="btn_wirte">
+        <button type="submit">글쓰기</button>
+        <button type="reset">취소</button>
+      </div>
     </form>
 
     <footer>
