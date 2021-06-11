@@ -1,0 +1,95 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+form {
+  width: 58%;
+  margin: 50px auto;
+}
+.board_title h2 {
+  margin-top: 70px;
+  padding-left: 3%;
+  font-size: 30px;
+  padding: 10px auto;
+}
+fieldset {
+  border: 10px solid;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+}
+.selectbox {
+  border-radius: 5px;
+  margin: 10px auto;
+  margin-left: 2%;
+  height: 35px;
+}
+
+.admin_top {
+  display: flex;
+  margin-left: 13%;
+}
+
+.filebox {
+  text-align: left;
+  width: 10%;
+}
+.filebox label {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  color: gray;
+  font-size: inherit;
+  line-height: normal;
+  vertical-align: middle;
+  background-color: #fdfdfd;
+  cursor: pointer;
+  border: 1px solid #ebebeb;
+  border-bottom-color: #e2e2e2;
+  border-radius: 0.25em;
+}
+.filebox input[type="file"] {
+  /* 파일 필드 숨기기 */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+textarea {
+  resize: none;
+  width: 95%;
+  height: 280px;
+  margin: 25px;
+  margin-left: 7%;
+  border-radius: 5px;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+form div {
+  width: 80%;
+  margin: 5px auto;
+}
+
+form input {
+  width: 100%;
+  margin: 4px 15px;
+  padding: 8px 20px;
+  border-radius: 3px;
+  outline: 0;
+  text-align: left;
+}
+.btn_write {
+  margin-left: 23%;
+}
+button {
+  width: 20%;
+  height: 50px;
+  margin: 20px 50px;
+  border-radius: 15px;
+}

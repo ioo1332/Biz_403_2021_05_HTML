@@ -16,7 +16,6 @@
   text-decoration: none;
   box-sizing: border-box;
   margin: 0;
-  list-style: none;
 }
 
 #main_top {
@@ -24,40 +23,53 @@
   width: 100%;
   max-width: 1050px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 70px;
   /* 가운데 정렬 해줘야 해서 margin:auto 쓰고 헤더높이만큼 아래로 와야 되기 때문에 margin-top을 그 아래에 써줌 */
 }
 
-/* user ------------------------------------------------------------ */
+/* top ( user ) ------------------------------------------------------------ */
 
-/* height 쓰지 않고 padding */
 #main_user {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   border: 1px solid gray;
-  max-width: 300px;
+  width: 300px;
+  height: 225px;
   padding: 40px;
+  text-align: center;
+  margin: auto;
 }
 
 #main_user input {
+  display: block;
+  width: 200px;
+  margin: auto;
+  outline: 0;
+  border-radius: 50px;
+  border: 2px solid lightgray;
   font-size: 13px;
   line-height: 2.5;
   margin-bottom: 15px;
-  padding-left: 15px;
-  padding-right: 35px;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: 0.5s;
+}
+
+#login input:focus {
+  width: 100%;
 }
 
 #main_user button {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  width: 80px;
+  height: 30px;
   margin: auto;
   margin-top: 10px;
+  border: 0;
+  background-color: white;
+  border: 2px solid rgb(184, 184, 184);
+  border-radius: 25px;
+  color: rgb(39, 38, 38);
 }
 
-/* slide ------------------------------------------------------------ */
+/* top ( slide ) ------------------------------------------------------------ */
 
 #main_slide {
   width: 730px;
@@ -66,10 +78,24 @@
   position: relative;
 }
 
+#slide_img_box {
+  overflow: hidden;
+  transform: scale(1);
+  transition: transform 5s;
+}
+
 #main_slide img {
   width: 100%;
   display: none;
   cursor: pointer;
+  transition: transform 0.5s linear;
+}
+
+#main_slide img:hover {
+  transform: scale(1.1); /*  default */
+  -webkit-transform: scale(1.1); /*  크롬 */
+  -moz-transform: scale(1.1); /* FireFox */
+  -o-transform: scale(1.1); /* Opera */
 }
 
 #main_slide img:first-child {
@@ -108,13 +134,13 @@
 }
 
 .circle:first-child {
-  background-color: #99c4c8;
+  background-color: #d6b26e;
 }
 
-/* best ------------------------------------------------------------ */
+/* middle ( best , data )  ------------------------------------------------------------ */
 
 #main_middle {
-  padding-top: 40px;
+  padding-top: 50px;
   display: flex;
   width: 100%;
   max-width: 1050px;
@@ -135,63 +161,75 @@
 }
 
 #main_best h2,
-#main_best h2 span,
 #main_data h2 {
   font-size: 18px;
   font-weight: 700;
+  border-bottom: 1px solid gray;
   padding-bottom: 7px;
   margin-bottom: 10px;
-  border-bottom: 1px solid gray;
+  padding-left: 10px;
 }
 
-#main_best h2 span {
-  border-bottom: 0;
-}
-
-#main_best h2,
-#main_data h2 {
-  padding-left: 15px;
+#main_best div,
+#main_data div {
+  display: flex;
 }
 
 #main_best img,
 #main_data img {
-  float: left;
+  width: 200px;
+  height: 180px;
+  padding-top: 10px;
   padding-right: 20px;
   cursor: pointer;
 }
 
-ol {
-  margin: 10px;
+#main_best ol,
+#main_data ul {
+  width: 60%;
 }
 
-.list_best {
+#main_best div ol li.list_best,
+#main_data div ul li.list_data {
   line-height: 2.3;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+#main_best div ol li.list_best:hover,
+#main_data div ul li.list_data:hover {
+  font-weight: bold;
   cursor: pointer;
+}
+
+.list_best span {
+  font-weight: bold;
+}
+
+#main_data div ul {
+  list-style: disc;
 }
 
 /* bottom ------------------------------------------------------------ */
 
 #main_bottom {
+  padding-top: 50px;
   width: 100%;
   max-width: 1050px;
   margin: auto;
-  margin-top: 50px;
+  text-align: center;
 }
 
 #main_bottom h2 {
   font-size: 20px;
   font-weight: 700;
-  margin-bottom: 10px;
-  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .board {
   table-layout: fixed;
   width: 100%;
-  width: 1050px;
   margin: auto;
   text-align: center;
 }
@@ -212,7 +250,8 @@ ol {
   border-bottom: 0.5px solid #eae9e9;
 }
 
-.board tr td.title {
+/* 글제목은 왼쪽 정렬하고 마우스 커서 모양 바뀜 */
+.board tr td:nth-of-type(3) {
   text-align: left;
   cursor: pointer;
 }
@@ -225,6 +264,6 @@ footer {
   margin: auto;
   margin-top: 40px;
   text-align: center;
-  border-top: 3px solid gray;
+  border-top: 3px solid #d6b26e;
   line-height: 5;
 }

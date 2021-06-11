@@ -1,103 +1,81 @@
-h1 {
-  font-size: 50px;
-  font-weight: bold;
-  text-align: center;
-  padding: 50px;
-}
-div {
-  justify-content: space-between;
-  display: flex;
-  padding-left: 70%;
-}
-select,
 p#p1 {
-  padding: 1rem;
-  margin: auto;
-  width: 100%;
+  display: flex;
+  margin-left: 79%;
 }
-.con {
-  margin: auto;
-  max-width: 1000px;
-}
-
-.table-common > table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.table-common > table th,
-.table-common > table td {
-  border: 1px solid black;
+input {
   padding: 10px;
 }
-
-.article-list table {
-  border: none;
-  border-top: 2px solid lightgray;
-  border-bottom: 2px solid lightgray;
+button#search {
+  padding: 10px;
+  margin-right: 0;
 }
-
-.article-list > table th,
-.article-list > table td {
-  border: none;
+button#search:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 2px #bbb;
 }
-
-.article-list > table td {
-  border-bottom: 1px solid lightgray;
-}
-
-.article-list > table thead {
-  border-bottom: 2px solid lightgray;
-  background-color: #f5f5f5;
-}
-button {
+button#writer {
+  position: relative;
+  width: auto;
   margin-top: 20px;
-  margin-left: 1400px;
+  margin-left: 90%;
   padding: 10px;
   cursor: pointer;
 }
-button:hover {
-  box-shadow: 3px 3px 3px #ddd;
+button#writer:hover {
+  box-shadow: 2px 2px 2px #bbb;
 }
-tbody > tr > td {
+tbody > tr:hover {
+  cursor: pointer;
+  background-color: #f3eef0;
+}
+
+/* ------------------------------------------------------------------------- */
+
+#info_box {
+  padding-top: 50px;
+  width: 100%;
+  max-width: 1050px;
+  margin: auto;
   text-align: center;
 }
-.select {
-  position: relative;
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
-.select .option-list {
-  position: absolute;
-  top: 100%;
-  left: 0;
+.board {
+  table-layout: fixed;
   width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.board tr th {
+  border-top: 2px solid gray;
+  padding: 10px;
+  font-weight: bold;
+  background-color: #f5f3f3;
+  border-bottom: 1px solid lightgray;
+}
+
+.board tr td {
   overflow: hidden;
-  max-height: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 12px;
+  border-bottom: 0.5px solid #eae9e9;
 }
 
-.select.active .option-list {
-  max-height: none;
-}
+/* copyright ------------------------------------------------------------ */
 
-body {
-  margin: 10px;
-  font-size: 14px;
-}
-
-select {
-  width: 200px;
-  padding: 0.8em 0.5em;
-  font-family: inherit;
-  background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg)
-    no-repeat 95% 50%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: 1px solid #999;
-  border-radius: 0px;
-}
-
-select::-ms-expand {
-  /* for IE 11 */
-  display: none;
+footer {
+  width: 100%;
+  max-width: 1050px;
+  margin: auto;
+  margin-top: 40px;
+  text-align: center;
+  border-top: 3px solid #d6b26e;
+  line-height: 5;
 }
