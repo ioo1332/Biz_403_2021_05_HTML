@@ -3,38 +3,51 @@
   margin: 0;
   padding: 0;
 }
-.board {
-  background-color: white;
-  border: 1px solid black;
-  display: inline-block;
-  margin: 10px;
-  border-radius: 5px;
-  padding: 0.5em 3.5em 0.5em 1em;
+form {
+  width: 55%;
+  margin: 50px auto;
+}
+fieldset {
+  width: 90%;
+  margin: 50px;
+  border: 1px solid;
+  border-radius: 15px;
+  color: white;
+}
+h2 {
+  padding-left: 3%;
+  font-size: 30px;
+  padding: 10px auto;
 }
 
-fieldset {
-  border: 0;
-  padding: 5px 65px;
-}
-table {
-  border-collapse: collapse;
-}
-#write {
-  width: 50%;
-  margin: 0 auto;
-}
-h1 {
-  font-size: 30px;
-  padding: 25px 65px;
-}
-.title {
-  background-color: white;
-  border: 1px solid black;
-  display: inline-block;
-  margin: 10px;
-}
 textarea {
-  background-color: white;
-  border: 1px solid black;
-  margin: 10px 10px;
+  resize: none;
+  width: 90%;
+  height: 280px;
+  margin: 20px;
+  border-radius: 5px;
+  outline: 0;
+  box-sizing: border-box;
+}
+.selectbox {
+  border-radius: 5px;
+  margin: 10px auto;
+}
+form div {
+  width: 80%;
+  margin: 5px auto;
+}
+
+form input {
+  width: 70%;
+  margin: 4px 5px;
+  padding: 8px 20px;
+  border-radius: 5px;
+  outline: 0;
+}
+button {
+  width: 20%;
+  height: 50px;
+  margin: 20px 50px;
+  border-radius: 15px;
 }

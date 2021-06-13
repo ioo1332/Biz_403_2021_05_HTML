@@ -8,16 +8,12 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/write2.css" />
+    <link rel="stylesheet" href="css/write_admin.css" />
   </head>
   <body>
     <header>
       <nav id="navi">
-        <div id="title">
-          <div id="logo"><img src="images/roof_beige.png" alt="지붕" /></div>
-          <a href="#"><h1>HONJAL</h1> </a>
-          <h2>혼자서도 잘해요</h2>
-        </div>
+        <img src="images/logo_v5.jpg" alt="로고" />
         <ul id="menu">
           <li class="menu_list"><a href="/notice">공지사항</a></li>
           <li class="menu_list"><a href="/data">정보게시판</a></li>
@@ -30,33 +26,43 @@
       </nav>
     </header>
     <form>
-      <h2>글쓰기</h2>
+      <div class="board_title">
+        <h2>글쓰기</h2>
+      </div>
       <fieldset>
-        <div>
-          
+        <div class="admin_top">
           <select>
-            <option id="honzal">혼잘TALK</option>
-            <option id="info">정보TALK</option>
+            <option id="honzal">랜선집들이</option>
           </select>
-          <input type="text" placeholder="제목을 입력해주세요" /><br />
+          <input
+            class="write_input"
+            type="text"
+            placeholder="제목을 입력해주세요"
+          /><br />
+          <div class="filebox">
+            <label for="ex_file"><h1>&#128190;</h1></label>
+            <input type="file" id="ex_file" />
+          </div>
         </div>
+
         <div>
-          <textarea 
+          <textarea
             class="contents"
             placeholder="내용을 입력해주세요."
           ></textarea
           ><br />
         </div>
-          <div>
-            <button>글쓰기</button>
-            <button>취소</button>
-          </div>
-        </div>
       </fieldset>
+      <div class="btn_write">
+        <button type="submit">글쓰기</button>
+        <button type="reset">취소</button>
+      </div>
     </form>
 
     <footer>
-      <address>CopyRight &copy; honjal@honjal.com</address>
+      <address>
+        &copy; 2021. honjal All pictures cannot be copied without permission.
+      </address>
     </footer>
 
     <div class=""></div>

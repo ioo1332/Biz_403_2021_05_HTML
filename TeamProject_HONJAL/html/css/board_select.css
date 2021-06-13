@@ -10,35 +10,43 @@
     url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf")
       format("truetype");
 }
-p#p1 {
-  display: flex;
-  margin-left: 76%;
-  justify-content: flex-end;
-}
 .title {
   margin-top: 20px;
   font-size: 25px;
   font-family: "NanumBarunGothic";
   margin-left: 5%;
 }
-input {
-  padding: 10px;
+select {
+  padding: 2px 8px;
+  width: 1px;
+}
+p#p1 {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+}
+p#p1 input {
+  padding-right: 0;
+  margin: 0;
+  margin-left: 74%;
+  width: 20%;
 }
 button#search {
   padding: 10px;
-  margin-right: 0;
+  margin: 0;
 }
 button#search:hover {
   cursor: pointer;
   box-shadow: 2px 2px 2px #bbb;
 }
 button#writer {
-  height: 50%;
+  position: relative;
+  width: auto;
+  margin-top: 20px;
+  margin-left: 90%;
+  padding: 10px;
   cursor: pointer;
-  width: 100px;
-  margin: 50px;
-
-  text-align: center;
 }
 button#writer:hover {
   box-shadow: 2px 2px 2px #bbb;
@@ -47,7 +55,6 @@ tbody > tr:hover {
   cursor: pointer;
   background-color: #f3eef0;
 }
-
 /* ------------------------------------------------------------------------- */
 
 #info_box {
@@ -90,35 +97,4 @@ footer {
   text-align: center;
   border-top: 3px solid #d6b26e;
   line-height: 5;
-}
-.board span {
-  color: red;
-}
-
-/* paging --------------------------------------------------------------------*/
-.paging {
-  display: flex;
-
-  margin-left: 400px;
-  margin-top: 30px;
-  width: 60%;
-  height: 50px;
-}
-
-.paging a {
-  color: black;
-
-  padding: 8px 16px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.paging a.on {
-  background-color: rgb(230, 240, 217);
-  color: black;
-}
-
-.paging a:hover:not(.on) {
-  background-color: rgb(230, 240, 217);
-  color: white;
 }
