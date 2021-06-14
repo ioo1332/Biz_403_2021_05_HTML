@@ -59,7 +59,7 @@ option {
 }
 .write_input {
   border-radius: 10px;
-  border: 1 solid black;
+  border: 01 solid black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,10 +95,11 @@ option {
 
 textarea {
   max-width: 1050px;
+  margin: 0 auto;
   resize: none;
   width: 99%;
   height: 280px;
-  padding: 10px;
+  padding: 15px;
   margin-left: 2%;
   border-radius: 10px;
   outline: 0;
