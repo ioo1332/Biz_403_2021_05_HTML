@@ -1,0 +1,154 @@
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+  src: url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix")
+      format("embedded-opentype"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff")
+      format("woff"),
+    url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf")
+      format("truetype");
+}
+section {
+  font-family: "NanumBarunGothic";
+
+  padding-top: 70px;
+
+  width: 100%;
+  max-width: 1050px;
+  margin: auto;
+}
+.title {
+  font-size: 25px;
+  margin-left: 30px;
+}
+
+div#good {
+  display: flex;
+  margin-left: 30px;
+  margin-top: 20px;
+
+  font-size: 25px;
+}
+div > p {
+  margin-top: 20px;
+}
+
+.read {
+  height: auto;
+  padding: auto;
+  width: 1050px;
+  margin: auto;
+  margin-top: 70px;
+  border: 1px solid white;
+  background-color: rgb(240, 240, 240, 1);
+}
+div#title {
+  font-size: 20px;
+  font-weight: bold;
+  font: bold;
+  margin: 20px 20px;
+}
+div#text {
+  font-family: "NanumBarunGothic";
+
+  font-size: 20px;
+  margin: 20px 100px;
+}
+p#date {
+  width: 100%;
+  margin-left: 650px;
+  padding-top: 30px;
+  font-size: 25px;
+}
+div#user {
+  display: flex;
+  margin-left: 800px;
+
+  font-size: 25px;
+}
+button#select {
+  border: 1px solid black;
+  width: 10%;
+  height: 10%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20%;
+  margin-left: 45%;
+  margin-top: 100px;
+  padding: auto;
+  background-color: rgb(220, 220, 220, 1);
+  transition: border-radius 0.5s;
+}
+button#select:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  transition: border-radius 0.5s;
+  background-color: rgb(200, 200, 200, 1);
+}
+button#scrap {
+  width: 100px;
+  height: 50px;
+  border-radius: 20%;
+  margin-left: 75%;
+
+  background-color: rgb(255, 244, 95);
+}
+
+button#list {
+  width: 100px;
+  height: 50px;
+  border-radius: 20%;
+  margin-left: 20px;
+  background-color: rgb(255, 244, 95);
+}
+button#scrap:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 2px gray;
+}
+/* review ---------------------------------------------------------*/
+h2 {
+  font-size: 20px;
+  margin-top: 40px;
+}
+.review {
+  margin: auto;
+  width: 1050px;
+  margin-top: 30px;
+  border-top: 2px solid green;
+  font-size: 20px;
+}
+
+.review th {
+  text-align: left;
+}
+input {
+  margin-top: 50px;
+  width: 80%;
+  height: 200px;
+}
+button {
+  border-radius: 10px;
+}
+button#review {
+  margin-left: 50px;
+  width: 10%;
+  height: 50px;
+}
+button:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 2px gray;
+}
+
+/* copyright ------------------------------------------------------------ */
+
+footer {
+  width: 100%;
+  max-width: 1050px;
+  margin: auto;
+  margin-top: 40px;
+  text-align: center;
+  border-top: 3px solid #d6b26e;
+  line-height: 5;
+}

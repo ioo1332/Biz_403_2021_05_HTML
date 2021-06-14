@@ -7,27 +7,27 @@
     <title>HONJAL</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/scrap.css" />
+    <link rel="stylesheet" href="css/board_select.css" />
+    <script src="js/nav.js"></script>
   </head>
   <body>
     <header>
       <nav id="navi">
-        <img src="images/logo_v5.jpg" alt="로고" />
+        <a href="index.html"><img src="images/logo_v5.jpg" alt="로고" /></a>
         <ul id="menu">
-          <li class="menu_list"><a href="/notice">공지사항</a></li>
-          <li class="menu_list"><a href="/data">정보게시판</a></li>
-          <li class="menu_list"><a href="/tip">생활 TIP</a></li>
-          <li class="menu_list"><a href="/myhome">랜선집들이</a></li>
-          <li class="menu_list"><a href="/talk">혼잘TALK</a></li>
-          <li class="menu_list"><a href="/review">리뷰게시판</a></li>
-          <li class="menu_list"><a href="/qna">자취 Q&A</a></li>
+          <li class="menu_list">공지사항</li>
+          <li class="menu_list">정보게시판</li>
+          <li class="menu_list">생활 TIP</li>
+          <li class="menu_list">랜선집들이</li>
+          <li class="menu_list">혼잘TALK</li>
+          <li class="menu_list">리뷰게시판</li>
+          <li class="menu_list">자취 Q&A</li>
         </ul>
       </nav>
     </header>
 
-    <article id="main_bottom">
-      <h2 id="scrap">SCRAP</h2>
+    <article id="info_box">
+      <h2 class="title">SCRAP</h2>
       <div id="select">
         <p id="p1">
           <input type="text" placeholder="검색어를 입력하세요" />
@@ -149,23 +149,31 @@
         </tr>
         <tr>
           <td><input type="checkbox" /></td>
-          <td class="seq">1</td>
-          <td class="category">공지사항</td>
-          <td class="title">
-            혼자서도 잘해요 혼자서도 잘해요 혼자서도 잘해요 혼자서도 잘해요
-            혼자서도 잘해요
-          </td>
-          <td class="name">서녕</td>
-          <td class="date">2021.06.08</td>
-          <td class="hita">729</td>
-          <td class="good"></td>
+          <td>1</td>
+          <td>공지사항</td>
+          <td id="align">혼자서도 잘해요<span>[4]</span></td>
+          <td>서녕</td>
+          <td>2021.06.08</td>
+          <td>729</td>
+          <td></td>
         </tr>
       </table>
-      <button id="delete">삭제</button>
+      <div class="paging">
+        <button id="delete">삭제</button>
+        <a href="#">&laquo;</a>
+        <a href="#" class="on">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">&raquo;</a>
+      </div>
     </article>
 
     <footer>
-      <address>CopyRight &copy; honjal@honjal.com</address>
+      <address>
+        &copy; 2021. honjal All pictures cannot be copied without permission.
+      </address>
     </footer>
 
     <div class=""></div>

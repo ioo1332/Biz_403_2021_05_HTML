@@ -27,33 +27,34 @@ p#p1 {
   justify-content: flex-end;
 }
 p#p1 input {
-  padding-right: 0;
-  margin: 0;
-  margin-left: 74%;
+  margin-right: 10px;
   width: 20%;
 }
 button#search {
   padding: 10px;
   margin: 0;
+  border-radius: 15px;
 }
 button#search:hover {
   cursor: pointer;
   box-shadow: 2px 2px 2px #bbb;
 }
 button#writer {
-  position: relative;
-  width: auto;
-  margin-top: 20px;
-  margin-left: 90%;
-  padding: 10px;
+  height: 40px;
   cursor: pointer;
+  width: 100px;
+  margin-left: 200px;
+  border-radius: 15px;
 }
 button#writer:hover {
   box-shadow: 2px 2px 2px #bbb;
 }
 tbody > tr:hover {
   cursor: pointer;
-  background-color: #f3eef0;
+  background-color: #fff6fa;
+}
+td#align {
+  text-align: left;
 }
 /* ------------------------------------------------------------------------- */
 
@@ -97,4 +98,48 @@ footer {
   text-align: center;
   border-top: 3px solid #d6b26e;
   line-height: 5;
+}
+.board span {
+  color: red;
+}
+/* paging --------------------------------------------------------------------*/
+.paging {
+  display: flex;
+
+  margin-left: 400px;
+  margin-top: 30px;
+  width: 60%;
+  height: 35px;
+}
+
+.paging a {
+  color: black;
+
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.5s;
+}
+
+.paging a.on {
+  background-color: rgb(230, 240, 217);
+  color: red;
+}
+
+.paging a:hover:not(.on) {
+  background-color: rgb(230, 240, 217);
+  color: red;
+}
+
+/* scrap 삭제 버튼 ------------------------------------------------------------------------------ */
+button#delete {
+  height: 40px;
+  cursor: pointer;
+  width: 100px;
+  margin-left: -400px;
+  margin-right: 300px;
+  border-radius: 15px;
+  justify-content: flex-start;
+}
+button#delete:hover {
+  box-shadow: 2px 2px 2px #bbb;
 }

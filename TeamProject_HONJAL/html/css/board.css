@@ -12,8 +12,12 @@
 }
 p#p1 {
   display: flex;
-  margin-left: 76%;
+
   justify-content: flex-end;
+}
+input {
+  margin-right: 10px;
+  padding: 10px;
 }
 .title {
   margin-top: 20px;
@@ -21,31 +25,34 @@ p#p1 {
   font-family: "NanumBarunGothic";
   margin-left: 5%;
 }
-input {
-  padding: 10px;
-}
+
 button#search {
   padding: 10px;
   margin-right: 0;
+  border-radius: 15px;
+  outline: 0;
 }
 button#search:hover {
   cursor: pointer;
   box-shadow: 2px 2px 2px #bbb;
 }
 button#writer {
-  height: 50%;
+  height: 40px;
   cursor: pointer;
   width: 100px;
-  margin: 50px;
-
-  text-align: center;
+  margin-left: 200px;
+  border-radius: 15px;
+  outline: 0;
 }
 button#writer:hover {
   box-shadow: 2px 2px 2px #bbb;
 }
-tbody > tr:hover {
+tr:hover {
   cursor: pointer;
-  background-color: #f3eef0;
+  background-color: #fff6fa;
+}
+td#align {
+  text-align: left;
 }
 
 /* ------------------------------------------------------------------------- */
@@ -102,7 +109,7 @@ footer {
   margin-left: 400px;
   margin-top: 30px;
   width: 60%;
-  height: 50px;
+  height: 35px;
 }
 
 .paging a {
@@ -110,15 +117,15 @@ footer {
 
   padding: 8px 16px;
   text-decoration: none;
-  transition: background-color 0.3s;
+  transition: background-color 0.5s;
 }
 
 .paging a.on {
   background-color: rgb(230, 240, 217);
-  color: black;
+  color: red;
 }
 
 .paging a:hover:not(.on) {
   background-color: rgb(230, 240, 217);
-  color: white;
+  color: red;
 }

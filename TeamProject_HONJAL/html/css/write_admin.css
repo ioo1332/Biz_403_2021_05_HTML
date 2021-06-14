@@ -40,6 +40,7 @@ fieldset {
 select {
   padding: 8px;
   outline: 0;
+  border-radius: 10px;
 }
 
 .admin_top {
@@ -49,12 +50,16 @@ select {
   max-width: 1050px;
   margin-left: 12%;
 }
-select {
+
+option {
+  border: 1px solid black;
   border-radius: 10px;
+  padding: 8px;
+  font-size: 100%;
 }
 .write_input {
   border-radius: 10px;
-  border: 1;
+  border: 1 solid black;
   display: flex;
   align-items: center;
   justify-content: center;
