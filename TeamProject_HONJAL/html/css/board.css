@@ -12,12 +12,19 @@
 }
 p#p1 {
   display: flex;
-
+  margin-bottom: 30px;
   justify-content: flex-end;
 }
 input {
   margin-right: 10px;
   padding: 10px;
+  border-radius: 15px;
+  outline: 0;
+  border: 1px solid lightgray;
+}
+input:focus {
+  border-radius: 15px;
+  border: 1px solid gray;
 }
 .title {
   margin-top: 20px;
@@ -29,12 +36,13 @@ input {
 button#search {
   padding: 10px;
   margin-right: 0;
-  border-radius: 15px;
+  border-radius: 50px;
   outline: 0;
+  border: 2px solid #b3d83c;
+  background-color: white;
 }
 button#search:hover {
   cursor: pointer;
-  box-shadow: 2px 2px 2px #bbb;
 }
 button#writer {
   height: 40px;
@@ -43,13 +51,16 @@ button#writer {
   margin-left: 200px;
   border-radius: 15px;
   outline: 0;
+  border: 2px solid #b3d83c;
+  background-color: white;
 }
-button#writer:hover {
-  box-shadow: 2px 2px 2px #bbb;
+
+.board tr td:nth-of-type(2) {
+  text-align: left;
+  cursor: pointer;
 }
 tr:hover {
-  cursor: pointer;
-  background-color: #fff6fa;
+  background-color: #faf5ef;
 }
 td#align {
   text-align: left;
@@ -73,7 +84,7 @@ td#align {
 
 .board tr th {
   border-top: 2px solid gray;
-  padding: 10px;
+  padding: 11.5px;
   font-weight: bold;
   background-color: #f5f3f3;
   border-bottom: 1px solid lightgray;
@@ -85,21 +96,6 @@ td#align {
   white-space: nowrap;
   padding: 12px;
   border-bottom: 0.5px solid #eae9e9;
-}
-
-/* copyright ------------------------------------------------------------ */
-
-footer {
-  width: 100%;
-  max-width: 1050px;
-  margin: auto;
-  margin-top: 40px;
-  text-align: center;
-  border-top: 3px solid #d6b26e;
-  line-height: 5;
-}
-.board span {
-  color: red;
 }
 
 /* paging --------------------------------------------------------------------*/
@@ -121,11 +117,24 @@ footer {
 }
 
 .paging a.on {
-  background-color: rgb(230, 240, 217);
-  color: red;
+  background-color: #f2fad8;
 }
 
 .paging a:hover:not(.on) {
-  background-color: rgb(230, 240, 217);
+  background-color: #f2fad8;
+}
+
+/* copyright ------------------------------------------------------------ */
+
+footer {
+  width: 100%;
+  max-width: 1050px;
+  margin: auto;
+  margin-top: 40px;
+  text-align: center;
+  border-top: 3px solid #d6b26e;
+  line-height: 5;
+}
+.board span {
   color: red;
 }

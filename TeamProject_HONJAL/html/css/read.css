@@ -10,135 +10,197 @@
     url("//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf")
       format("truetype");
 }
-section {
+
+.ground {
   font-family: "NanumBarunGothic";
-
-  padding-top: 70px;
-
-  width: 100%;
   max-width: 1050px;
   margin: auto;
-}
-.title {
-  font-size: 25px;
-  margin-left: 30px;
-}
-
-div#good {
-  display: flex;
-  margin-left: 30px;
-  margin-top: 20px;
-
-  font-size: 25px;
-}
-div > p {
-  margin-top: 20px;
-}
-
-.read {
-  height: auto;
-  padding: auto;
-  width: 1050px;
-  margin: auto;
   margin-top: 70px;
-  border: 1px solid white;
-  background-color: rgb(240, 240, 240, 1);
+  background-color: #faf5ef;
 }
-div#title {
-  font-size: 20px;
-  font-weight: bold;
-  font: bold;
-  margin: 20px 20px;
-}
-div#text {
-  font-family: "NanumBarunGothic";
 
-  font-size: 20px;
-  margin: 20px 100px;
-}
-p#date {
+.btn_ud {
   width: 100%;
-  margin-left: 650px;
-  padding-top: 30px;
-  font-size: 25px;
+  text-align: right;
 }
-div#user {
+
+.ground > .btn_ud {
+  padding: 70px 130px 10px 0;
+}
+
+.update,
+.delete {
+  border: 1px solid lightgray;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.btn_ud > .update,
+.btn_ud > .delete {
+  margin-left: 10px;
+}
+
+.writing,
+.comment {
+  width: 100%;
+  padding: 0 130px 70px 130px;
+}
+
+.writing_title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.writing_good {
   display: flex;
-  margin-left: 800px;
-
-  font-size: 25px;
-}
-button#select {
-  border: 1px solid black;
+  margin-top: 15px;
+  align-items: center;
+  /* 같은 라인에 맞추기 */
+  background-color: #e3ecc8;
   width: 10%;
-  height: 10%;
-  padding: 10px;
-  box-sizing: border-box;
-  border-radius: 20%;
-  margin-left: 45%;
-  margin-top: 100px;
-  padding: auto;
-  background-color: rgb(220, 220, 220, 1);
-  transition: border-radius 0.5s;
-}
-button#select:hover {
-  cursor: pointer;
-  border-radius: 50%;
-  transition: border-radius 0.5s;
-  background-color: rgb(200, 200, 200, 1);
-}
-button#scrap {
-  width: 100px;
-  height: 50px;
-  border-radius: 20%;
-  margin-left: 75%;
-
-  background-color: rgb(255, 244, 95);
+  justify-content: center;
 }
 
-button#list {
-  width: 100px;
-  height: 50px;
-  border-radius: 20%;
+.writing_good p {
+  font-size: 16px;
+}
+
+.writing_good img,
+.writing_user img {
+  width: 30px;
+  height: 30px;
+}
+
+.writing_date {
+  font-size: 17px;
+  padding-bottom: 20px;
+}
+
+.writing_user {
+  display: flex;
+  justify-content: flex-end;
+  /* 오른쪽 정렬 */
+  align-items: center;
+  font-size: 20px;
+}
+
+.writing hr {
+  border: 0.1px solid rgb(223, 223, 223);
+  margin: 30px 0 50px 0;
+}
+
+.writing_user_img {
   margin-left: 20px;
-  background-color: rgb(255, 244, 95);
-}
-button#scrap:hover {
-  cursor: pointer;
-  box-shadow: 2px 2px 2px gray;
-}
-/* review ---------------------------------------------------------*/
-h2 {
-  font-size: 20px;
-  margin-top: 40px;
-}
-.review {
-  margin: auto;
-  width: 1050px;
-  margin-top: 30px;
-  border-top: 2px solid green;
-  font-size: 20px;
 }
 
-.review th {
-  text-align: left;
+.writing_content {
+  font-size: 17px;
+  margin-top: 30px;
+  line-height: 30px;
 }
-input {
-  margin-top: 50px;
+
+.writing_content img {
   width: 80%;
-  height: 200px;
+  margin-top: 20px;
 }
-button {
-  border-radius: 10px;
+
+.like {
+  width: 100%;
+  margin: auto;
 }
-button#review {
-  margin-left: 50px;
-  width: 10%;
-  height: 50px;
+
+.writing_bottom {
+  display: flex;
+  width: 100%;
+  margin: 30px auto;
+  align-items: center;
+  justify-content: center;
 }
-button:hover {
+
+.box_like {
+  width: 70px;
+  background-color: #e3ecc8;
+  border-radius: 50px;
+  margin: auto;
+}
+
+.writing_bottom button {
+  width: 100px;
+  height: 40px;
+  border-radius: 15px;
+  outline: 0;
+  border: 2px solid #b3d83c;
+  background-color: white;
   cursor: pointer;
-  box-shadow: 2px 2px 2px gray;
+}
+
+.like:hover {
+  cursor: pointer;
+}
+
+/* comment ------------------------------------------------------------ */
+
+.comment > p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#tb_comment_list,
+#tb_comment {
+  width: 100%;
+  margin: auto;
+  align-items: center;
+}
+
+#tb_comment_list .cm_img,
+#tb_comment .cm_img {
+  vertical-align: middle;
+}
+
+#tb_comment_list span {
+  color: gray;
+}
+
+#tb_comment_list img,
+#tb_comment img {
+  width: 30px;
+  height: 30px;
+}
+
+td.cm_name,
+td.cm_cm,
+td textarea {
+  padding: 20px;
+  vertical-align: middle;
+}
+
+.cm_btn {
+  vertical-align: middle;
+  text-align: center;
+}
+
+#tb_comment_list tr {
+  border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+textarea {
+  width: 90%;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 15px;
+  resize: none;
+}
+
+#tb_comment .insert {
+  width: 80%;
+  height: 50px;
+
+  border-radius: 15px;
+  outline: 0;
+  border: 2px solid #b3d83c;
+  background-color: white;
+  cursor: pointer;
 }
 
 /* copyright ------------------------------------------------------------ */

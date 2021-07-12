@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        padding: 2rem;
+        width: 200px;
+        height: 50px;
+        margin: 10px auto;
+        border: 1px solid blue;
+        /*
+                box-shaodw를 안쪽으로 펼치는데 size등등이 모두 0이므로 보이지 않는 상태                
+            */
+        box-shadow: 0 0 0 0 #aaa inset;
+        transition: 0.7s;
+      }
+      div:nth-of-type(1):hover {
+        box-shadow: 0 150px 0 0 #aaa inset;
+      }
+      div:nth-of-type(2):hover {
+        box-shadow: 400px 0 0 0 #aaa inset;
+      }
+      div:nth-of-type(3):hover {
+        box-shadow: 400px 100px 0 0 #aaa inset;
+      }
+      div:nth-of-type(4):hover {
+        box-shadow: 400px 0px 0 0 #aaa inset, -400px 0 0 0 #333 inset;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Home</div>
+    <div>republic of koread</div>
+    <div>대한민국</div>
+    <div>대한민국</div>
+  </body>
+</html>

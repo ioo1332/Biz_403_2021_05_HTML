@@ -26,68 +26,83 @@
       </nav>
     </header>
 
-    <section>
-      <h2 class="title">글 읽기</h2>
-      <form class="read">
-        <div id="title">쿠첸 4인용 미니 밥솥 후기</div>
-        <div id="good">
-          <img src="images/다운로드2.png" id="good" />
-          <p>720</p>
-          <p id="date">2021-06-13</p>
+    <div class="ground">
+      <div class="btn_ud">
+        <button class="update">수정</button>
+        <button class="delete">삭제</button>
+      </div>
+      <section class="writing">
+        <div class="writing_title">전대 정문 고기 찐맛집 '술돼지' 리뷰 ~!</div>
+        <div class="writing_good">
+          <img src="images/good.png" />
+          <p>729</p>
         </div>
-
-        <div id="user">
-          <p>넥스트뤠블</p>
-          <img src="images/user1.jpg" id="good" />
+        <div>
+          <p align="right" class="writing_date">2021-06-14 09:45</p>
+          <div class="writing_user">
+            <p class="writing_user_name">서녕</p>
+            <img src="images/user.png" class="writing_user_img" />
+          </div>
         </div>
-        <div id="text">
-          I'm on the Next Level Yeah 절대적 룰을 지켜 내 손을 놓지 말아 결속은
-          나의 무기 광야로 걸어가 알아 네 Home ground 위협에 맞서서 제껴라
-          제껴라 제껴라 상상도 못한 Black out 유혹은 깊고 진해 (Too hot too hot)
-          맞잡은 손을 놓쳐 난 절대 포기 못해 I'm on the Next Level 저 너머의
-          문을 열어 Next Level 널 결국엔 내가 부셔 Next Level KOSMO에 닿을
-          때까지 Next Level 제껴라 제껴라 제껴라
-          <img src="images/sample_slide.jpg" />
+        <hr />
+        <div class="writing_content">
+          <p>광주광역시 북구 전남대학교 정문쪽에 위치한 고깃집 술돼지 ,,</p>
+          <p>정말 너무너무너무너무너무 맛있어요 ,,</p>
+          <img src="images/sample_meat.jpg" />
         </div>
-
-        <button id="select"><img src="images/다운로드3.png" /></button>
-        <div id="button">
-          <button id="scrap">스크랩</button><button id="list">목록</button>
+        <div class="writing_bottom">
+          <div class="box_like">
+            <img src="images/good.png" class="like" />
+          </div>
+          <button>스크랩</button>
         </div>
-      </form>
-      <form>
-        <h2>댓글</h2>
-        <table class="review">
+      </section>
+      <section class="comment">
+        <p>댓글 2</p>
+        <hr />
+        <table id="tb_comment_list">
           <tr>
-            <th width="10%">넥스트뤠블</th>
-            <th style="overflow: scroll width=70%">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-              excepturi fugiat atque quos eveniet officiis perspiciatis ducimus
-              vitae impedit praesentium cumque voluptatibus sunt ullam corporis,
-              iure laborum! Aperiam, adipisci sint!
-            </th>
-            <th width="5%"><button>수정</button></th>
-            <th width="5%"><button>삭제</button></th>
+            <td width="5%" class="cm_img"><img src="images/user.png" /></td>
+            <td width="10%" class="cm_name">혜승</td>
+            <td width="70%" class="cm_cm">
+              우와ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
+              <span>2021-06-14 09:46</span>
+            </td>
+            <td width="7%" class="cm_btn">
+              <button class="update">수정</button>
+            </td>
+            <td width="7%" class="cm_btn">
+              <button class="delete">삭제</button>
+            </td>
           </tr>
-
           <tr>
-            <th width="10%">넥스트뤠블</th>
-            <th type="text" width="70%">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-              excepturi fugiat atque quos eveniet officiis perspiciatis ducimus
-              vitae impedit praesentium cumque voluptatibus sunt ullam corporis,
-              iure laborum! Aperiam, adipisci sint!
-            </th>
-            <th width="5%"><button>수정</button></th>
-            <th width="5%"><button>삭제</button></th>
+            <td width="5%" class="cm_img"><img src="images/user.png" /></td>
+            <td width="10%" class="cm_name">창준</td>
+            <td width="70%" class="cm_cm">
+              와우 <span>2021-06-14 09:46</span>
+            </td>
+            <td width="7%" class="cm_btn">
+              <button class="update">수정</button>
+            </td>
+            <td width="7%" class="cm_btn">
+              <button class="delete">삭제</button>
+            </td>
           </tr>
         </table>
-        <table>
-          <input type="text" placeholder="댓글 내용을 입력하세요" />
-          <button id="review">등록</button>
+        <table id="tb_comment">
+          <tr>
+            <td width="5%" class="cm_img"><img src="images/user.png" /></td>
+            <td width="10%" class="cm_name">서녕</td>
+            <td width="70%">
+              <textarea placeholder="댓글 내용을 입력하세요"></textarea>
+            </td>
+            <td width="15%" class="cm_btn">
+              <button class="insert">등록</button>
+            </td>
+          </tr>
         </table>
-      </form>
-    </section>
+      </section>
+    </div>
 
     <footer>
       <address>

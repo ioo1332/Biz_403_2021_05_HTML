@@ -7,8 +7,17 @@
     <title>HONJAL</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/board_select.css" />
+    <link rel="stylesheet" href="css/scrap.css" />
     <script src="js/nav.js"></script>
+    <script>
+      function selectAll(selectAll) {
+        const checkboxes = document.getElementsByName("allcheck");
+
+        checkboxes.forEach((checkbox) => {
+          checkbox.checked = selectAll.checked;
+        });
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -36,14 +45,16 @@
       </div>
       <table class="board">
         <tr>
-          <th width="5%">체크</th>
+          <th width="5%">
+            <input type="checkbox" name="allcheck" onclick="selectAll(this)" />
+          </th>
           <th width="15%">No.</th>
           <th id="select" width="10%">
             말머리
             <select>
-              <option selected></option>
-              <option>생활TIP-세탁</option>
-              <option>생활TIP-청소</option>
+              <option selected>전체</option>
+              <option>생활TIP-세탁&청소</option>
+
               <option>생활TIP-요리</option>
               <option>생활TIP-공간활용</option>
               <option>랜선집들이</option>
@@ -58,7 +69,7 @@
           <th width="5%">추천</th>
         </tr>
         <tr>
-          <td><input type="checkbox" /></td>
+          <td><input type="checkbox" name="allcheck" /></td>
           <td>10</td>
           <td></td>
           <td></td>
@@ -68,7 +79,7 @@
           <td></td>
         </tr>
         <tr>
-          <td><input type="checkbox" /></td>
+          <td><input type="checkbox" name="allcheck" /></td>
           <td>9</td>
           <td></td>
           <td></td>
@@ -78,7 +89,7 @@
           <td></td>
         </tr>
         <tr>
-          <td><input type="checkbox" /></td>
+          <td><input type="checkbox" name="allcheck" /></td>
           <td>8</td>
           <td></td>
           <td></td>
@@ -88,7 +99,7 @@
           <td></td>
         </tr>
         <tr>
-          <td><input type="checkbox" /></td>
+          <td><input type="checkbox" name="allcheck" /></td>
           <td>7</td>
           <td></td>
           <td></td>
@@ -98,7 +109,7 @@
           <td></td>
         </tr>
         <tr>
-          <td><input type="checkbox" /></td>
+          <td><input type="checkbox" name="allcheck" /></td>
           <td>6</td>
           <td></td>
           <td></td>
@@ -108,7 +119,7 @@
           <td></td>
         </tr>
         <tr>
-          <td><input type="checkbox" /></td>
+          <td><input type="checkbox" name="allcheck" /></td>
           <td>5</td>
           <td></td>
           <td></td>
@@ -118,7 +129,7 @@
           <td></td>
         </tr>
         <tr>
-          <td><input type="checkbox" /></td>
+          <td><input type="checkbox" name="allcheck" /></td>
           <td>4</td>
           <td></td>
           <td></td>
@@ -128,7 +139,7 @@
           <td></td>
         </tr>
         <tr>
-          <td><input type="checkbox" /></td>
+          <td><input type="checkbox" name="allcheck" /></td>
           <td>3</td>
           <td></td>
           <td></td>
@@ -138,7 +149,7 @@
           <td></td>
         </tr>
         <tr>
-          <td><input type="checkbox" /></td>
+          <td><input type="checkbox" name="allcheck" /></td>
           <td>2</td>
           <td></td>
           <td></td>
@@ -148,7 +159,7 @@
           <td></td>
         </tr>
         <tr>
-          <td><input type="checkbox" /></td>
+          <td><input type="checkbox" name="allcheck" /></td>
           <td>1</td>
           <td>공지사항</td>
           <td id="align">혼자서도 잘해요<span>[4]</span></td>

@@ -17,27 +17,36 @@
   margin-left: 5%;
 }
 select {
-  padding: 2px 8px;
+  padding: 0px 7px;
   width: 1px;
 }
 p#p1 {
   display: flex;
-  margin: 0;
-  padding: 0;
+
   justify-content: flex-end;
+  margin-bottom: 30px;
 }
-p#p1 input {
+input {
   margin-right: 10px;
-  width: 20%;
+  padding: 10px;
+  border-radius: 15px;
+  outline: 0;
+  border: 1px solid lightgray;
+}
+input:focus {
+  border-radius: 15px;
+  border: 1px solid gray;
 }
 button#search {
   padding: 10px;
-  margin: 0;
-  border-radius: 15px;
+  margin-right: 0;
+  border-radius: 50px;
+  outline: 0;
+  border: 2px solid #b3d83c;
+  background-color: white;
 }
 button#search:hover {
   cursor: pointer;
-  box-shadow: 2px 2px 2px #bbb;
 }
 button#writer {
   height: 40px;
@@ -45,17 +54,18 @@ button#writer {
   width: 100px;
   margin-left: 200px;
   border-radius: 15px;
+  border: 2px solid #b3d83c;
+  background-color: white;
 }
-button#writer:hover {
-  box-shadow: 2px 2px 2px #bbb;
-}
-tbody > tr:hover {
-  cursor: pointer;
-  background-color: #fff6fa;
-}
-td#align {
+
+.board tr td:nth-of-type(3) {
   text-align: left;
+  cursor: pointer;
 }
+tr:hover {
+  background-color: #faf5ef;
+}
+
 /* ------------------------------------------------------------------------- */
 
 #info_box {
@@ -121,13 +131,11 @@ footer {
 }
 
 .paging a.on {
-  background-color: rgb(230, 240, 217);
-  color: red;
+  background-color: #f2fad8;
 }
 
 .paging a:hover:not(.on) {
-  background-color: rgb(230, 240, 217);
-  color: red;
+  background-color: #f2fad8;
 }
 
 /* scrap 삭제 버튼 ------------------------------------------------------------------------------ */
